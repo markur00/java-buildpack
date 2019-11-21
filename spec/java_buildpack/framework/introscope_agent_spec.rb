@@ -74,7 +74,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         component.release
 
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
-        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
+        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/releases/11.1/core' \
                                      '/config/IntroscopeAgent.profile')
         expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
@@ -98,7 +98,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         component.release
 
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
-        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
+        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/releases/11.1/core' \
                                      '/config/IntroscopeAgent.profile')
         expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
@@ -121,7 +121,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         component.release
 
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
-        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
+        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/releases/11.1/core' \
                                      '/config/IntroscopeAgent.profile')
         expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
@@ -144,7 +144,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         component.release
 
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
-        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
+        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/releases/11.1/core' \
                                      '/config/IntroscopeAgent.profile')
         expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
@@ -167,7 +167,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         component.release
 
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
-        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
+        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/releases/11.1/core' \
                                      '/config/IntroscopeAgent.profile')
         expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
@@ -190,7 +190,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         component.release
 
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
-        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
+        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/releases/11.1/core' \
                                      '/config/IntroscopeAgent.profile')
         expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
@@ -213,7 +213,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         component.release
 
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
-        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
+        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/releases/11.1/core' \
                                      '/config/IntroscopeAgent.profile')
         expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
@@ -236,7 +236,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         component.release
 
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
-        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
+        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/releases/11.1/core' \
                                      '/config/IntroscopeAgent.profile')
         expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
@@ -262,7 +262,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         component.release
 
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
-        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
+        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/releases/11.1/core' \
                                      '/config/IntroscopeAgent.profile')
         expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
@@ -289,7 +289,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         component.release
 
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
-        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
+        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/releases/11.1/core' \
                                      '/config/IntroscopeAgent.profile')
         expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
@@ -317,7 +317,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         component.release
 
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
-        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
+        expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/releases/11.1/core' \
                                      '/config/IntroscopeAgent.profile')
         expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=TestProcess')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
