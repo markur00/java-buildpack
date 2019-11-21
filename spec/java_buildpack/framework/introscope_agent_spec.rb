@@ -100,7 +100,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
         expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
                                      '/config/IntroscopeAgent.profile')
-        expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
+       # expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
 
         expect(java_opts).to include('-DagentManager.url.1=test-host-name:5001')
