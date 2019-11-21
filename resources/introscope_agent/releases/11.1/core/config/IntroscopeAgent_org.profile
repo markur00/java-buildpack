@@ -285,7 +285,6 @@ introscope.agent.jmx.name.jsr77.disable=true
 #
 # Changing this property requires restarting the Monitored Process
 #introscope.agent.jmx.name.primarykeys=Type,Name
-introscope.agent.jmx.name.primarykeys=
 
 # Controls which JMX data is gathered - a comma-separated list of desired
 # keywords  If the Introscope metric name contains one of them, the metric will
@@ -295,8 +294,7 @@ introscope.agent.jmx.name.primarykeys=
 # are supported and can be escaped with \\. 
 #
 # Changing this property requires restarting the Monitored Process
-#introscope.agent.jmx.name.filter=java.lang|type=Threading:*ThreadCount,java.lang|type=ClassLoading*:*ClassCount,java.nio|*|type=BufferPool:MemoryUsed,java.lang*type=GarbageCollector:CollectionTime,org.springframework.boot*
-introscope.agent.jmx.name.filter=
+introscope.agent.jmx.name.filter=java.lang|type=Threading:*ThreadCount,java.lang|type=ClassLoading*:*ClassCount,java.nio|*|type=BufferPool:MemoryUsed,java.lang*type=GarbageCollector:CollectionTime,org.springframework.boot*
 
 # Controls which (if any) JMX MBean attributes are to be ignored. A
 # comma-separated list of desired keywords. If an MBean attribute name matches
@@ -313,7 +311,7 @@ introscope.agent.jmx.name.filter=
 # be reported when this property value is set to false. 
 #
 # Changing this property requires restarting the Monitored Process
-introscope.agent.jmx.excludeStringMetrics=false
+introscope.agent.jmx.excludeStringMetrics=true
 
 # The number of metrics which will be reported before the metrics are clamped.
 # Changes to this property do not require restarting the managed application. 
@@ -977,7 +975,7 @@ introscope.agent.dns.lookup.max.wait.in.milliseconds=200
 # name. 
 #
 # Changing this property requires restarting the Monitored Process
-introscope.agent.defaultProcessName=MarinaAgentProcess3
+introscope.agent.defaultProcessName=UnknownProcess
 
 # Agent Name 
 #
@@ -1260,8 +1258,7 @@ introscope.agent.urlgroup.keys=default
 introscope.agent.urlgroup.group.default.pathprefix=*
 
 # Changing this property does not require restarting the Monitored Process
-introscope.agent.urlgroup.group.default.format=MarinaTest2
-#{path_delimited:/:0:5}
+introscope.agent.urlgroup.group.default.format={path_delimited:/:0:5}
 
 # Changing this property does not require restarting the Monitored Process
 introscope.agent.urlgroup.frontend.url.clamp=5
