@@ -76,7 +76,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
         expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
                                      '/config/IntroscopeAgent.profile')
-        #expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
+        expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
 
         expect(java_opts).to include('-DagentManager.url.1=test-host-name:5001')
@@ -100,7 +100,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
         expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
                                      '/config/IntroscopeAgent.profile')
-       # expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
+        expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
 
         expect(java_opts).to include('-DagentManager.url.1=test-host-name:5001')
@@ -123,7 +123,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
         expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
                                      '/config/IntroscopeAgent.profile')
-        #expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
+        expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
 
         expect(java_opts).to include('-DagentManager.url.1=ssl://test-host-name:5443')
@@ -146,7 +146,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
         expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
                                      '/config/IntroscopeAgent.profile')
-       # expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
+        expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
 
         expect(java_opts).to include('-DagentManager.url.1=ssl://test-host-name:5443')
@@ -169,7 +169,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
         expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
                                      '/config/IntroscopeAgent.profile')
-      #  expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
+        expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
 
         expect(java_opts).to include('-DagentManager.url.1=http://test-host-name:8081')
@@ -192,7 +192,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
         expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
                                      '/config/IntroscopeAgent.profile')
-       # expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
+        expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
 
         expect(java_opts).to include('-DagentManager.url.1=http://test-host-name:8081')
@@ -215,7 +215,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
         expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
                                      '/config/IntroscopeAgent.profile')
-      #  expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
+        expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
 
         expect(java_opts).to include('-DagentManager.url.1=https://test-host-name:8444')
@@ -238,7 +238,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
         expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
                                      '/config/IntroscopeAgent.profile')
-    #    expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
+        expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
 
         expect(java_opts).to include('-DagentManager.url.1=https://test-host-name:8444')
@@ -264,7 +264,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
         expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
                                      '/config/IntroscopeAgent.profile')
-     #   expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
+        expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
 
         expect(java_opts).to include('-DagentManager.url.1=https://test-host-name:8444')
@@ -291,7 +291,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
         expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
                                      '/config/IntroscopeAgent.profile')
-    #    expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
+        expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=test-application-name')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
 
         expect(java_opts).to include('-DagentManager.url.1=https://test-host-name:8444')
@@ -319,7 +319,7 @@ describe JavaBuildpack::Framework::IntroscopeAgent do
         expect(java_opts).to include('-javaagent:$PWD/.java-buildpack/introscope_agent/Agent.jar')
         expect(java_opts).to include('-Dcom.wily.introscope.agentProfile=$PWD/.java-buildpack/introscope_agent/core' \
                                      '/config/IntroscopeAgent.profile')
-     #   expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=TestProcess')
+        expect(java_opts).to include('-Dintroscope.agent.defaultProcessName=TestProcess')
         expect(java_opts).to include('-Dintroscope.agent.hostName=test-application-uri-0')
 
         expect(java_opts).to include('-DagentManager.url.1=https://test-host-name:8444')
