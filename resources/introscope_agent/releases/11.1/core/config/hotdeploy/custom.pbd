@@ -1,0 +1,6 @@
+TurnOn: TestFlag
+SetFlag: TestFlag
+
+IdentifyMatchingClassesAs: com.ca.test.* TestFlag
+TraceAllMethodsIfFlagged: TestFlag BlamedMethodNanoTimerHC TestBlamedMethodNanoTimer:Time
+
