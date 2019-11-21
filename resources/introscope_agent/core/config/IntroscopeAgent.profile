@@ -1258,7 +1258,8 @@ introscope.agent.urlgroup.keys=default
 introscope.agent.urlgroup.group.default.pathprefix=*
 
 # Changing this property does not require restarting the Monitored Process
-introscope.agent.urlgroup.group.default.format={path_delimited:/:0:5}
+introscope.agent.urlgroup.group.default.format=MarinaURL1
+#{path_delimited:/:0:5}
 
 # Changing this property does not require restarting the Monitored Process
 introscope.agent.urlgroup.frontend.url.clamp=5
