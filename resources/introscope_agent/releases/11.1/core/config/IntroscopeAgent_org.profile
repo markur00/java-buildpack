@@ -294,7 +294,8 @@ introscope.agent.jmx.name.jsr77.disable=true
 # are supported and can be escaped with \\. 
 #
 # Changing this property requires restarting the Monitored Process
-introscope.agent.jmx.name.filter=java.lang|type=Threading:*ThreadCount,java.lang|type=ClassLoading*:*ClassCount,java.nio|*|type=BufferPool:MemoryUsed,java.lang*type=GarbageCollector:CollectionTime,org.springframework.boot*
+#introscope.agent.jmx.name.filter=java.lang|type=Threading:*ThreadCount,java.lang|type=ClassLoading*:*ClassCount,java.nio|*|type=BufferPool:MemoryUsed,java.lang*type=GarbageCollector:CollectionTime,org.springframework.boot*
+introscope.agent.jmx.name.filter=
 
 # Controls which (if any) JMX MBean attributes are to be ignored. A
 # comma-separated list of desired keywords. If an MBean attribute name matches
@@ -311,7 +312,7 @@ introscope.agent.jmx.name.filter=java.lang|type=Threading:*ThreadCount,java.lang
 # be reported when this property value is set to false. 
 #
 # Changing this property requires restarting the Monitored Process
-introscope.agent.jmx.excludeStringMetrics=true
+introscope.agent.jmx.excludeStringMetrics=false
 
 # The number of metrics which will be reported before the metrics are clamped.
 # Changes to this property do not require restarting the managed application. 
